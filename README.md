@@ -1,4 +1,4 @@
-## 📦 Instalasi
+## 📦 How to running project
 
 ### 1. Instalasi Frontend
 ```bash
