@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Orbitron:wght@400..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.mempelai {
+  font-family: "Great Vibes", cursive;
+}
+
+
+@keyframes swing {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.animate-bunga {
+  animation: swing 6s ease-in-out infinite;
+}
+
+
+/* Animasi muncul dari atas */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi goyang kiri–kanan */
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+
+/* Gabungan animasi */
+.lamp-animated {
+  animation: 
+    slideDown 1s ease-out forwards, /* pertama muncul */
+    swing 3s ease-in-out infinite 1s; /* lanjut goyang, delay 1s biar nunggu slideDown selesai */
+  transform-origin: top center; /* biar goyang dari atas */
+}
