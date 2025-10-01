@@ -3,10 +3,10 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
 // images
-import bg from "../../assets/images/bg.png";
-import head from "../../assets/images/head.png";
-import gunung from "../../assets/images/gunung.png";
-import foot from "../../assets/images/foot.png";
+import bg from "../../assets/images/bg.avif";
+import head from "../../assets/images/head.avif";
+import gunung from "../../assets/images/gunung.avif";
+import foot from "../../assets/images/foot.avif";
 import { motion } from "framer-motion";
 
 export default function Undangan() {
@@ -28,6 +28,7 @@ export default function Undangan() {
       {/* Frame mobile */}
       <div
         className="relative w-full max-w-md min-h-screen text-lime-800  shadow-xl flex items-center justify-center overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -40,12 +41,12 @@ export default function Undangan() {
         {/* Konten */}
         <div className="relative z-90 flex flex-col items-center justify-center text-center space-y-12 px-6">
           <div className="space-y-4">
-            <img src={head} alt="head" className="w-[14rem]" />
+            <img src={head} alt="head" loading="lazy" className="w-[14rem]" />
             <h2 className="text-lg  tracking-widest font-bold">
               The Wedding Of
             </h2>
           </div>
-          <img src={gunung} alt="gunungan" className="w-[18rem]" />
+          <img src={gunung} alt="gunungan" loading="lazy" className="w-[18rem]" />
           <h1 className="mempelai text-5xl font-bold mt-2 ">Etta & Krisna</h1>
 
           <div>
@@ -61,7 +62,7 @@ export default function Undangan() {
           >
             Open Invitation
           </Link>
-          <img src={foot} alt="foot" className="absolute -bottom-20 w-[30rem] max-w-none" />
+          <img src={foot} alt="foot" loading="lazy" className="absolute -bottom-20 w-[30rem] max-w-none" />
         </div>
       </div>
     </div>

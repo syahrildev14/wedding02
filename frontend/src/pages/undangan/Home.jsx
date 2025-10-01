@@ -6,25 +6,25 @@ import Countdown from "../../components/Countdown";
 import MusicPlayer from "../../components/MusicPlayer";
 
 // images
-import bg from "../../assets/images/bg.png";
-import bungaAtas from "../../assets/images/foot.png";
-import burungKanan from "../../assets/images/burung.png";
-import burungKiri from "../../assets/images/burung.png";
-import bersama from "../../assets/images/galeri/bersama.jpeg";
-import pria from "../../assets/images/galeri/krisna.jpeg";
-import wanita from "../../assets/images/galeri/etta.jpg";
-import pintu from "../../assets/images/pintu.png";
+import bg from "../../assets/images/bg.avif";
+import bungaAtas from "../../assets/images/foot.avif";
+import burungKanan from "../../assets/images/burung.avif";
+import burungKiri from "../../assets/images/burung.avif";
+import bersama from "../../assets/images/galeri/bersama.avif";
+import pria from "../../assets/images/galeri/krisna.avif";
+import wanita from "../../assets/images/galeri/etta.avif";
+import pintu from "../../assets/images/pintu.avif";
 import cincin from "../../assets/images/cincin.png";
-import manok from "../../assets/images/manok.png";
+import manok from "../../assets/images/manok.avif";
 // Galeri
-import galeri1 from "../../assets/images/galeri/galeri1.jpeg";
-import galeri2 from "../../assets/images/galeri/galeri2.jpg";
-import galeri4 from "../../assets/images/galeri/galeri4.jpg";
-import galeri6 from "../../assets/images/galeri/galeri6.jpg";
-import galeri7 from "../../assets/images/galeri/galeri7.jpg";
-import galeri8 from "../../assets/images/galeri/galeri8.jpg";
-import galeri9 from "../../assets/images/galeri/galeri9.jpg";
-import galeri10 from "../../assets/images/galeri/galeri10.jpg";
+import galeri1 from "../../assets/images/galeri/galeri1.avif";
+import galeri2 from "../../assets/images/galeri/galeri2.avif";
+import galeri4 from "../../assets/images/galeri/galeri4.avif";
+import galeri6 from "../../assets/images/galeri/galeri6.avif";
+import galeri7 from "../../assets/images/galeri/galeri7.avif";
+import galeri8 from "../../assets/images/galeri/galeri8.avif";
+import galeri9 from "../../assets/images/galeri/galeri9.avif";
+import galeri10 from "../../assets/images/galeri/galeri10.avif";
 
 // icons
 import { Instagram } from "lucide-react";
@@ -56,6 +56,7 @@ const Home = () => {
       {/* Frame mobile */}
       <div
         className="relative w-full sticky top-0 max-w-md min-h-screen text-lime-800 shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -68,6 +69,7 @@ const Home = () => {
         {/* Bunga */}
         <motion.img
           src={bungaAtas}
+          loading="lazy"
           alt="Burung Kanan"
           className="absolute -top-7 w-[30rem] h-[9rem] z-20 -scale-[1]"
           initial={{ y: 200, opacity: 0 }} // mulai dari atas (tersembunyi)
@@ -77,6 +79,7 @@ const Home = () => {
 
         <motion.img
           src={manok}
+          loading="lazy"
           alt="Burung Kanan"
           className="absolute -top-12 rotate-12 -left-6 w-[12rem] z-20"
           initial={{ y: 200, opacity: 0 }} // mulai dari atas (tersembunyi)
@@ -86,11 +89,13 @@ const Home = () => {
 
         <img
           src={burungKanan}
+          loading="lazy"
           alt="Burung kanan"
           className="absolute bottom-0 right-0 w-[12rem] z-20 scale-x-[-1] animate-bunga"
         />
         <img
           src={burungKiri}
+          loading="lazy"
           alt="Bunga kiri bawah"
           className="absolute bottom-0 left-0 w-[12rem] z-20 animate-bunga"
         />
@@ -105,6 +110,7 @@ const Home = () => {
           >
             <motion.img
               src={bersama}
+              loading="lazy"
               alt="foto bersama"
               className="w-[18rem] rounded-t-full"
               initial={{ opacity: 0 }}
@@ -137,6 +143,7 @@ const Home = () => {
       {/* Section Surah */}
       <div
         className="relative  w-full max-w-md h-[20rem] text-lime-800 shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -188,6 +195,7 @@ const Home = () => {
       {/* Mempelai Pria */}
       <div
         className="relative w-full max-w-md h-[46rem] shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -246,6 +254,7 @@ const Home = () => {
       {/* Mempelai Wanita */}
       <div
         className="relative w-full sticky top-0 max-w-md h-[46rem] text-lime-800 shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -271,6 +280,7 @@ const Home = () => {
             <h1 className="mempelai text-5xl">The Bride</h1>
             <motion.img
               src={wanita}
+              loading="lazy"
               alt="pria"
               className="w-[12rem] h-[17rem] rounded-full border-2 border-white"
               initial={{ opacity: 0 }} // mulai transparan
@@ -305,6 +315,7 @@ const Home = () => {
       {/* Jadwal */}
       <div
         className="relative w-full max-w-md min-h-screen bg-fixed bg-center bg-cover text-lime-800 shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -317,6 +328,7 @@ const Home = () => {
         {/* Bunga */}
         <motion.img
           src={pintu}
+          loading="lazy"
           alt="Pintu"
           className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[58rem] w-[35rem] max-w-none z-20"
           initial={{ scale: 0.8, opacity: 0 }}
@@ -331,18 +343,20 @@ const Home = () => {
 
         <img
           src={burungKanan}
+          loading="lazy"
           alt="Burung kanan"
           className="absolute bottom-0 -right-8 w-[14rem] z-20 scale-x-[-1] animate-bunga"
         />
         <img
           src={burungKiri}
+          loading="lazy"
           alt="Bunga kiri bawah"
           className="absolute bottom-0 -left-8 w-[14rem] z-20 animate-bunga"
         />
 
         {/* Konten Section 1 */}
         <div className="relative z-50 flex flex-col items-center justify-center text-center min-h-screen space-y-6 px-6">
-          <img src={cincin} alt="cincin" className=" w-24 mx-auto " />
+          <img src={cincin} alt="cincin" loading="lazy" className=" w-24 mx-auto " />
           {/*Jadwal Akad */}
           <div className="space-y-4 text-white">
             <motion.h1
@@ -483,6 +497,7 @@ const Home = () => {
       {/* Countdown & Gallery */}
       <div
         className="relative w-full max-w-md min-h-screen py-20 text-lime-800 shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -530,6 +545,7 @@ const Home = () => {
             <div className="max-w-6xl mx-auto grid grid-cols-2 gap-4">
               <motion.img
                 src={galeri1}
+                loading="lazy"
                 alt="Foto A"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -543,6 +559,7 @@ const Home = () => {
               />
               <motion.img
                 src={galeri2}
+                loading="lazy"
                 alt="Foto B"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -557,6 +574,7 @@ const Home = () => {
 
               <motion.img
                 src={galeri4}
+                loading="lazy"
                 alt="Foto A"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -571,6 +589,7 @@ const Home = () => {
 
               <motion.img
                 src={galeri6}
+                loading="lazy"
                 alt="Foto C"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -584,6 +603,7 @@ const Home = () => {
               />
               <motion.img
                 src={galeri7}
+                loading="lazy"
                 alt="Foto C"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -597,6 +617,7 @@ const Home = () => {
               />
               <motion.img
                 src={galeri8}
+                loading="lazy"
                 alt="Foto C"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -610,6 +631,7 @@ const Home = () => {
               />
               <motion.img
                 src={galeri9}
+                loading="lazy"
                 alt="Foto C"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -623,6 +645,7 @@ const Home = () => {
               />
               <motion.img
                 src={galeri10}
+                loading="lazy"
                 alt="Foto C"
                 className="w-full rounded-lg shadow-lg"
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -642,6 +665,7 @@ const Home = () => {
       {/* Rekening */}
       <div
         className="relative w-full max-w-md h-[44rem] py-20 text-lime-800 shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -707,6 +731,7 @@ const Home = () => {
       {/* Penutup */}
       <div
         className="relative w-full max-w-md h-[34rem] text-lime-800 shadow-xl overflow-hidden"
+        loading="lazy"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -718,11 +743,13 @@ const Home = () => {
 
         <img
           src={burungKanan}
+          loading="lazy"
           alt="Burung kanan"
           className="absolute bottom-0 -right-8 w-[12rem] z-20 scale-x-[-1] animate-bunga"
         />
         <img
           src={burungKiri}
+          loading="lazy"
           alt="Bunga kiri bawah"
           className="absolute bottom-0 -left-8 w-[12rem] z-20 animate-bunga"
         />
@@ -732,6 +759,7 @@ const Home = () => {
           <div className="space-y-8 text-white">
             <motion.img
               src={bersama}
+              loading="lazy"
               alt="foto bersama"
               className="w-[10rem] mx-auto rounded-full border-2 border-white"
               initial={{ scale: 0.5, opacity: 0 }}
