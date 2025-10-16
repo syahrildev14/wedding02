@@ -356,7 +356,12 @@ const Home = () => {
 
         {/* Konten Section 1 */}
         <div className="relative z-50 flex flex-col items-center justify-center text-center min-h-screen space-y-6 px-6">
-          <img src={cincin} alt="cincin" loading="lazy" className=" w-24 mx-auto " />
+          <img
+            src={cincin}
+            alt="cincin"
+            loading="lazy"
+            className=" w-24 mx-auto "
+          />
           {/*Jadwal Akad */}
           <div className="space-y-4 text-white">
             <motion.h1
@@ -776,8 +781,9 @@ const Home = () => {
               Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do'a restu
               kepada kedua mempelai. <br /> Hormat Kami Yang Mengundang
             </p>
+            <p>Hormat Kami :</p>
             <motion.h1
-              className="mempelai text-5xl"
+              className="text-md"
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
@@ -787,7 +793,8 @@ const Home = () => {
               }}
               viewport={{ once: false, amount: 0.5 }}
             >
-              Etta & Krisna
+              Bpk Ponijan (Alm.) & Bu Sumik Widayati <br />Heru Oktafian &
+              Vita Fauzi Maymunah
             </motion.h1>
           </div>
         </div>
