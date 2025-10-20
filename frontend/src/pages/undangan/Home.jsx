@@ -297,9 +297,11 @@ const Home = () => {
               Virnalisha Dwi Septarini, S.Pd
             </h2>
             <p className="text-md font-semibold">
-              Putri kedua dari <br /> Bpk Ponijan (Alm.) & Ibu Sumik Widayati
+              Putri dari <br /> Bpk Ponijan (Alm.) & Ibu Sumik Widayati
             </p>
-
+            <p className="text-md font-semibold">
+              Adik dari <br /> Heru Oktafian & Vita Fauzi. M
+            </p>
             <motion.button
               className="bg-white text-lime-800 py-2 px-10 flex items-center gap-2 rounded-full shadow-sm"
               initial={{ y: 100, opacity: 0 }} // mulai agak ke kanan + transparan
@@ -798,8 +800,8 @@ const Home = () => {
               }}
               viewport={{ once: false, amount: 0.5 }}
             >
-              Bpk Ponijan (Alm.) & Bu Sumik Widayati <br />Heru Oktafian &
-              Vita Fauzi Maymunah
+              Bpk Ponijan (Alm.) & Bu Sumik. W <br />
+              Heru Oktafian & Vita Fauzi. M
             </motion.h1>
           </div>
         </div>
