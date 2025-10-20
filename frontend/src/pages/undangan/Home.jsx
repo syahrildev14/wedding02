@@ -36,8 +36,13 @@ const Home = () => {
     { bank: "BSI", nomor: "7266029041", nama: "Krisna Mahardika" },
     {
       bank: "BRI",
-      nomor: " 364901042132531",
+      nomor: "364901042132531",
       nama: "Virnalisha Dwi Septarini",
+    },
+    {
+      bank: "BCA",
+      nomor: "1520582106",
+      nama: "Heru Oktafian",
     },
   ];
 
